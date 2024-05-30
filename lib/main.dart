@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: ElevatedButton(
+      body: OutlinedButton(
         child: Text("Hello how are you"),
         onPressed: (){
           print("Hello2");
