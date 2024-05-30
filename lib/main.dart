@@ -76,7 +76,19 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(child: Text("Welcome",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w100,color: Colors.red,backgroundColor: Colors.green), )),
+      body: TextButton(
+        child: Text("Hello"),
+        onPressed: (){
+          print("Hello2");
+        },
+        onLongPress: (){
+          print("Hello3");
+        },
+
+      )
+    //     how ot to use button in flutter
+    //   types of button in flutter ->
+      //   textbutton,elevated button, outline button
     // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
