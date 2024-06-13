@@ -55,7 +55,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+
 
 
   @override
@@ -76,20 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: OutlinedButton(
-        child: Text("Hello how are you"),
-        onPressed: (){
-          print("Hello2");
-        },
-        onLongPress: (){
-          print("Hello3");
-        },
-
-      )
-    //     how ot to use button in flutter
-    //   types of button in flutter ->
-      //   textbutton,elevated button, outline button
-    // This trailing comma makes auto-formatting nicer for build methods.
+      body: Center(
+          child:
+          Container(
+            width: 200,
+              height: 200,
+              child:
+              Image.asset("assets/images/flipping.jpg"))),
     );
   }
 }
